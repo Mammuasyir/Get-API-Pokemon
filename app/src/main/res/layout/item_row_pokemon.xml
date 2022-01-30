@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/item_image_pokemon"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_tv_level"
+            android:layout_below="@+id/item_image_pokemon"
+            android:text="Level"
+            android:textSize="22sp"
+            android:layout_margin="6dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_tv_level"
+            android:text="Hp"
+            android:id="@+id/item_tv_hp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_tv_level"
+            android:layout_alignParentEnd="true"
+            android:text="Types"
+            android:id="@+id/item_tv_types"
+            android:textSize="20sp"
+            tools:ignore="UnknownId" />
+
+    </RelativeLayout>
+
+</LinearLayout>
